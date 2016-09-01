@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<meta http-equiv="x-rim-auto-match" content="none">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Личный кабинет</title>
+
+	<link rel="shortcut icon" href="i/favicon.ico" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.min.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+</head>
+
+<body>
+			<!--[if lt IE 9]>
+	      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	     	<p class="browserupgrade">Вы используете <strong>устаревшую версию</strong> браузера. Пожалуйста <a href="http://browsehappy.com/">обновите Ваш браузер</a></p>
+	     	<![endif]-->
+	     	<div class="wrap-all">
+	     		<div class="wrap-top">
+	     			<header class="header-top">
+	     				<div class="container">
+	     					<div class="row">
+	     						<div class="col-lg-8">
+	     							<nav class="nav-top">
+	     								<ul class="nav-top__list">
+	     									<li class="nav-top__item"><a class="nav-top__lnk" href="#">О компании</a></li>
+	     									<li class="nav-top__item"><a class="nav-top__lnk" href="#">Способ оплаты</a></li>
+	     									<li class="nav-top__item"><a class="nav-top__lnk" href="#">Бонусная система</a></li>
+	     									<li class="nav-top__item"><a class="nav-top__lnk" href="#">Условия доставки</a></li>
+	     									<li class="nav-top__item"><a class="nav-top__lnk" href="#">Партнерам</a></li>
+	     									<li class="nav-top__item"><a class="nav-top__lnk" href="#">Контакты</a></li>
+	     								</ul>
+	     							</nav>
+	     						</div>
+	     						<div class="col-lg-3">
+	     							<div class="account">
+	     								<div class="account__img">
+	     									<img src="i/top-user-foto.png" width="20" height="20" alt="Фото пользователя">
+	     								</div>
+	     								<a href="#" class="account__username">Дмитрий</a>
+	     								<span class="account__balls"><b>1238</b> баллов</span>
+	     							</div>
+	     						</div>
+	     						<div class="col-lg-1">
+	     							<div class="login">
+	     								<a class="login__lnk lnk-fancybox" href="#login-site">Выход</a>
+	     							</div>
+	     						</div>
+	     					</div>
+	     				</div>
+	     			</header>
+	     			<header class="header-main header-main--inner">
+	     				<div class="container">
+	     					<div class="row">
+	     						<div class="col-lg-3">
+	     							<a href="index.html" class="logo">
+	     								<img src="i/logo.png" width="222" height="96" alt="Логотип">
+	     							</a>		
+	     						</div>
+	     						<div class="col-lg-6">
+	     							<div class="slogan">Интернет-магазин строительных товаров</div>
+	     						</div>
+	     						<div class="col-lg-3">
+	     							<div class="contakt-header">
+	     								8 (863) <b>123-45-67</b>
+	     								<span class="contakt-header__email">info@comcity.ru</span>					
+	     							</div>
+	     						</div>
+	     					</div>
+	     				</div>
+	     				<div class="container">
+	     					<div class="row">	
+	     						<div class="col-lg-12">			
+	     							<div class="wrapper">						
+	     								<div class="float-menu float-menu--default">	
+	     									<div class="search">																			
+	     										<form action="/page" class="search__form">
+	     											<input type="text" class="search__input" placeholder="Поиск по сайту">
+	     											<button class="search__btn btn-grey" type="submit">Искать</button>
+	     										</form>
+	     									</div>	
+	     									<nav class="nav-main">
+	     										<ul class="nav-main__list">
+	     											<li class="nav-main__item">
+	     												<a class="nav-main__lnk" href="#">Стройматериалы</a>
+	     												<div class="nav-main__sublist-group">
+	     													<ul class="sublist">
+	     														<li class="sublist__item sublist__item--title">Сухие смеси, грунтовки</li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Сухие смеси для устройства полов</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Штукатурки</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Шпатлевки</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Мотажные и кладочные смеси</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Клеи для плитки и камня</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Грунтовки</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Сыпучие материалы</a></li>
+
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Добавки для строительных растворов</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Красители для бетонных смесей (красители)</a></li>
+	     													</ul>
+	     													<ul class="sublist">
+	     														<li class="sublist__item sublist__item--title">Гидроизоляция</li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Универсальная</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Ремонтная</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Ленты гидроизоляционные</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Для фундамента</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Для ванной и санузла</a></li>
+	     													</ul>
+	     													<ul class="sublist">
+	     														<li class="sublist__item sublist__item--title">Строительство стен и перегородок</li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Гипсокартон</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Профили, маяки, уголки</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Блоки строительные</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Плиты пазогребневые</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Аксессуары для монтажа перегородок</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Кирпич</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Стеклоблоки</a></li>
+
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Стеклосетки и стеклохолсты</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Гипсоволокнистые листы</a></li>
+	     													</ul>
+	     													<ul class="sublist">
+	     														<li class="sublist__item sublist__item--title">Кровля и водосток</li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Металическая кровля</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Сотовый поликарбонат</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Волнистый лист (ондулин)</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Водосток</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Рулонная кровля</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Аксессцары для металлической кровли</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Аксессуары для водостока</a></li>
+
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Кровля на битумной основе</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Все для прозрачного листа</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Аксессуары для мягкой кровли</a></li>
+	     													</ul>
+	     													<ul class="sublist">
+	     														<li class="sublist__item sublist__item--title">Изоляционные материалы</li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Тепло- и шумоизоляция</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Пароизоляция</a></li>
+	     													</ul>
+	     													<ul class="sublist">
+	     														<li class="sublist__item sublist__item--title">Облицовочные материалы, затирки, клеи</li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Облицовочные матералы</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Клеи для облицовки</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Аксессуары для облицовочных материалов</a></li>
+	     													</ul>
+	     													<ul class="sublist">
+	     														<li class="sublist__item sublist__item--title">Плитка и дренажные каналы для тротуаров</li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Дренажные каналы</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Плитка тротуарная</a></li>
+	     														<li class="sublist__item"><a class="sublist__lnk" href="#">Аксессуары для дренажа</a></li>
+	     													</ul>
+	     												</div>
+	     											</li>
+	     											<li class="nav-main__item noslide"><a class="nav-main__lnk" href="#">Столярные изделия</a></li>
+	     											<li class="nav-main__item noslide"><a class="nav-main__lnk" href="#">Инструменты</a></li>
+	     											<li class="nav-main__item noslide"><a class="nav-main__lnk" href="#">Напольные покрытия</a></li>
+	     											<li class="nav-main__item noslide"><a class="nav-main__lnk" href="#">Плитка</a></li>
+	     											<li class="nav-main__item noslide"><a class="nav-main__lnk" href="#">Сантехника</a></li>
+	     											<li class="nav-main__item noslide"><a class="nav-main__lnk" href="#">Водоснабжение</a></li>
+	     											<li class="nav-main__item noslide"><a class="nav-main__lnk" href="#">Электротовары</a></li>
+	     										</ul>
+	     									</nav>
+	     								</div>
+	     							</div>
+	     						</div>
+	     					</div>
+	     				</div>
+	     				<div class="float-basket">
+	     					<div class="float-basket__count-goods">38</div>
+	     					<div class="float-basket__price">833 345 р</div>
+	     					<div class="float-basket__favorite">
+	     						<span class="float-basket__count-favor">10</span>
+	     						<span class="float-basket__count-compare">3</span>
+	     					</div>
+	     				</div>
+	     			</header>
+	     			<main class="main">	
+	     				<div class="container">
+	     					<div class="row">
+	     						<div class="col-lg-12">
+	     							<div class="wrapper">
+	     								<div class="breadcrumbs">
+	     									<a href="#" class="breadcrumbs__item breadcrumbs__item--arrow">Главная </a>Личный кабинет
+	     								</div>
+	     							</div>
+	     						</div>
+	     					</div>
+	     				</div>
+	     				<div class="container">
+	     					<div class="row">
+	     						<div class="col-lg-12">
+	     							<div class="wrapper">
+	     								<h1>Личный кабинет</h1>
+	     								<div class="user-info">
+	     									<div class="user-info__photo">
+	     										<div class="user-info__photo-wrap">
+	     											<img src="i/user-foto.png" alt="Фото" width="140" height="140">	
+	     										</div>	     										
+	     										<a href="#" class="user-photo__download">Загрузить фото</a>
+	     									</div>
+	     									<div class="user-desc">
+	     										<div class="user-desc__elem user-desc__name"><b>Имя </b>Дмитрий</div>
+	     										<div class="user-desc__elem user-desc__serneme"><b>Фамилия </b>Шишкин</div>
+	     										<div class="user-desc__elem user-desc__middle-name"><b>Отчество </b>Васильевич</div>
+	     										<div class="user-desc__elem user-desc__email"><b>Эл. почта </b>zainer@mail.ru</div>
+	     										<div class="user-desc__elem user-desc__login"><b>Логин </b>zainer</div>
+	     										<button class="btn-orange user-desc__btn">Изменить личные данные</button>
+	     									</div>
+	     								</div>   
+	     								<h2>Заказы</h2>								
+	     								<table class="table table--account">
+	     									<tr>
+	     										<th class="table__data">Дата заказа</th>
+	     										<th class="table__kod">Код</th>
+	     										<th class="table__goods">Товары</th>	     									
+	     										<th class="table__sum">
+	     											<div>
+		     											<a href="javascript:void(0);" class="slct">Сумма</a>
+		     											<ul class="drop table__sum-elem">
+			     											<li><a href="">3500</a></li>
+			     											<li><a href="">3600</a></li>
+			     											<li><a href="">3700</a></li>
+			     											<li><a href="">3800</a></li>
+		     											</ul>
+		     											<input type="hidden" id="select-size">
+	     											</div>
+	     										</th>
+	     										<th class="table__status">
+	     											<div>
+		     											<a href="javascript:void(0);" class="slct">Статус</a>
+		     											<ul class="drop table__status-elem">
+			     											<li><a href="">Хиты</a></li>
+			     											<li><a href="">Скидки</a></li>
+			     											<li><a href="">Новинки</a></li>
+			     											<li><a href="">Все товары</a></li>
+		     											</ul>
+		     											<input type="hidden" id="select-size">
+	     											</div>
+	     										</th>     									
+	     										<th class="table__pay">
+														<div>
+		     											<a href="javascript:void(0);" class="slct">Способ оплаты</a>
+		     											<ul class="drop table__pay-elem">
+			     											<li><a href="">Оплата на месте при получении</a></li>
+			     											<li><a href="">Оплата на расчётный счет</a></li>
+			     											<li><a href="">Карта или электронный перевод</a></li>
+		     											</ul>
+		     											<input type="hidden" id="select-size">
+	     											</div>
+	     										</th>
+	     										<th class="table__action">Действия</th>
+	     									</tr>
+	     									<tr>
+	     										<td>08.09.2016</td>
+	     										<td>12345</td>
+	     										<td class="table__goods-item">															
+	     											<dl>
+	     												<dt>Гипс cтроительный ВОЛМА-ГипсГипс cтроительный ВОЛМА-Гипс</dt>
+	     												<dd>10 шт</dd>
+	     											</dl>
+	     											<dl>
+	     												<dt>Штукатурка гипсовая КнауфШтукатурка гипсовая Кнауф</dt>
+	     												<dd>8 шт</dd>
+	     											</dl>
+	     											<dl>
+	     												<dt>Сварочный инвертор MC 200Сварочный инвертор MC 200</dt>
+	     												<dd>1 шт</dd>
+	     											</dl>
+	     											<dl>
+	     												<dt>Гипс cтроительный ВОЛМА-ГипсГипс cтроительный ВОЛМА-Гипс</dt>
+	     												<dd>10 шт</dd>
+	     											</dl>
+	     											<dl>
+	     												<dt>Сварочный инвертор MC 200Сварочный инвертор MC 200</dt>
+	     												<dd>8 шт</dd>
+	     											</dl>														
+	     										</td>
+	     										<td class="table__sum-item">52 340,00 р</td>
+	     										<td>Оплачен</td>
+	     										<td>Безналичный</td>
+	     										<td>
+	     											<a href="#" class="table__action-repeat"><span>Повторить</span></a>
+	     											<a href="#" class="table__action-del"><span>Удалить</span></a>
+	     										</td>
+	     									</tr>
+	     									<tr>
+	     										<td>08.09.2016</td>
+	     										<td>12345</td>
+	     										<td class="table__goods-item">
+	     											<dl>
+	     												<dt>Гипс cтроительный ВОЛМА-ГипсГипс cтроительный ВОЛМА-Гипс</dt>
+	     												<dd>10 шт</dd>
+	     											</dl>
+	     											<dl>
+	     												<dt>Штукатурка гипсовая КнауфШтукатурка гипсовая Кнауф</dt>
+	     												<dd>8 шт</dd>
+	     											</dl>
+	     										</td>
+	     										<td class="table__sum-item">240,00 р</td>
+	     										<td>Оплачен</td>
+	     										<td>Бонусы</td>
+	     										<td>
+	     											<a href="#" class="table__action-repeat"><span>Повторить</span></a>
+	     											<a href="#" class="table__action-del"><span>Удалить</span></a>
+	     										</td>
+	     									</tr>
+	     									<tr>
+	     										<td>08.09.2016</td>
+	     										<td>12345</td>
+	     										<td  class="table__goods-item">
+	     											<dl>
+	     												<dt>Гипс cтроительный ВОЛМА-ГипсГипс cтроительный ВОЛМА-Гипс</dt>
+	     												<dd>10 шт</dd>
+	     											</dl>
+	     											<dl>
+	     												<dt>Штукатурка гипсовая КнауфШтукатурка гипсовая Кнауф</dt>
+	     												<dd>8 шт</dd>
+	     											</dl>
+	     											<dl>
+	     												<dt>Сварочный инвертор MC 200Сварочный инвертор MC 200</dt>
+	     												<dd>1 шт</dd>
+	     											</dl>
+	     											<dl>
+	     												<dt>Гипс cтроительный ВОЛМА-ГипсГипс cтроительный ВОЛМА-Гипс</dt>
+	     												<dd>10 шт</dd>
+	     											</dl>
+	     											<dl>
+	     												<dt>Сварочный инвертор MC 200Сварочный инвертор MC 200</dt>
+	     												<dd>8 шт</dd>
+	     											</dl>							
+	     										</td>
+	     										<td class="table__sum-item">2 340,00 р</td>
+	     										<td>Доставлен</td>
+	     										<td>Безналичный</td>
+	     										<td>
+	     											<a href="#" class="table__action-repeat"><span>Повторить</span></a>
+	     											<a href="#" class="table__action-del"><span>Удалить</span></a>
+	     										</td>
+	     									</tr>
+	     									<tr>
+	     										<td>08.09.2016</td>
+	     										<td>12345</td>
+	     										<td class="table__goods-item">
+	     											<dl>
+	     												<dt>Гипс cтроительный ВОЛМА-ГипсГипс cтроительный ВОЛМА-Гипс</dt>
+	     												<dd>10 шт</dd>
+	     											</dl>
+	     											<dl>
+	     												<dt>Штукатурка гипсовая КнауфШтукатурка гипсовая Кнауф</dt>
+	     												<dd>8 шт</dd>
+	     											</dl>
+	     										</td>
+	     										<td class="table__sum-item">52 340,00 р</td>
+	     										<td>Оплачен</td>
+	     										<td>Безналичный</td>
+	     										<td>
+	     											<a href="#" class="table__action-repeat"><span>Повторить</span></a>
+	     											<a href="#" class="table__action-del"><span>Удалить</span></a>
+	     										</td>
+	     									</tr>
+	     									<tr>
+	     										<td>08.09.2016</td>
+	     										<td>12345</td>
+	     										<td class="table__goods-item">
+	     											<dl>
+	     												<dt>Гипс cтроительный ВОЛМА-ГипсГипс cтроительный ВОЛМА-Гипс</dt>
+	     												<dd>10 шт</dd>
+	     											</dl>
+	     											<dl>
+	     												<dt>Штукатурка гипсовая КнауфШтукатурка гипсовая Кнауф</dt>
+	     												<dd>8 шт</dd>
+	     											</dl>
+	     											<dl>
+	     												<dt>Сварочный инвертор MC 200Сварочный инвертор MC 200</dt>
+	     												<dd>1 шт</dd>
+	     											</dl>
+	     											<dl>
+	     												<dt>Гипс cтроительный ВОЛМА-ГипсГипс cтроительный ВОЛМА-Гипс</dt>
+	     												<dd>10 шт</dd>
+	     											</dl>
+	     											<dl>
+	     												<dt>Сварочный инвертор MC 200Сварочный инвертор MC 200</dt>
+	     												<dd>8 шт</dd>
+	     											</dl>							
+	     										</td>
+	     										<td class="table__sum-item">52 340,00 р</td>
+	     										<td>Оплачен</td>
+	     										<td>Безналичный</td>
+	     										<td>
+	     											<a href="#" class="table__action-repeat"><span>Повторить</span></a>
+	     											<a href="#" class="table__action-del"><span>Удалить</span></a>
+	     										</td>
+	     									</tr>
+	     									<tr>
+	     										<td>08.09.2016</td>
+	     										<td>12345</td>
+	     										<td class="table__goods-item">
+	     											<dl>
+	     												<dt>Гипс cтроительный ВОЛМА-ГипсГипс cтроительный ВОЛМА-Гипс</dt>
+	     												<dd>10 шт</dd>
+	     											</dl>
+	     											<dl>
+	     												<dt>Штукатурка гипсовая КнауфШтукатурка гипсовая Кнауф</dt>
+	     												<dd>8 шт</dd>
+	     											</dl>
+	     										</td>
+	     										<td class="table__sum-item">52 340,00 р</td>
+	     										<td>Не оплачен</td>
+	     										<td>Безналичный</td>
+	     										<td>
+	     											<a href="#" class="table__action-repeat"><span>Повторить</span></a>
+	     											<a href="#" class="table__action-del"><span>Удалить</span></a>
+	     										</td>
+	     									</tr>	     									
+	     								</table>	     								
+	     							</div>
+	     						</div>
+	     					</div>
+	     				</div>
+	     				<div class="buy-bonus">
+	     					<div class="container">
+	     						<div class="row">
+	     							<div class="col-lg-12">
+	     								<div class="wrapper">
+	     									<div class="buy-bonus__header clearfix">
+	     										<div class="buy-bonus__title">Купить бонусы</div>
+	     										<div class="buy-bonus__count-bonus">У вас 12345 бонусов</div>
+	     									</div>
+	     									<div class="buy-bonus__body">
+	     										<div class="bonus-item">
+	     											<div class="bonus-item__count">10 <br><span>баллов</span></div>
+	     											<div class="bonus-item__mark"><div>500р</div></div>
+	     											<button class="bonus-item__btn-buy" type="submit">Купить</button>
+	     										</div>
+	     										<div class="bonus-item">
+	     											<div class="bonus-item__count">50 <br><span>баллов</span></div>
+	     											<div class="bonus-item__mark"><div>2000р</div></div>
+	     											<button class="bonus-item__btn-buy" type="submit">Купить</button>
+	     										</div>
+	     										<div class="bonus-item">
+	     											<div class="bonus-item__count">100 <br><span>баллов</span></div>
+	     											<div class="bonus-item__mark"><div>4000р</div></div>
+	     											<button class="bonus-item__btn-buy" type="submit">Купить</button>
+	     										</div>
+	     										<div class="bonus-item">
+	     											<div class="bonus-item__count">500 <br><span>баллов</span></div>
+	     											<div class="bonus-item__mark"><div>18000р</div></div>
+	     											<button class="bonus-item__btn-buy" type="submit">Купить</button>
+	     										</div>
+	     									</div>
+	     								</div>
+	     							</div>
+	     						</div>
+	     					</div>
+	     				</div>
+	     				<div class="history-bonus">
+	     					<div class="container">
+	     						<div class="row">
+	     							<div class="col-lg-12">
+	     								<div class="wrapper">
+	     									<a class="history-bonus__title">История начисления и списания бонусов</a>
+	     									<div class="table-hide">
+	     										<table class="table">
+	     											<tr>
+	     												<th>Первый блок</th>
+	     												<th>Второй блок</th>
+	     												<th>Третий блок</th>
+	     												<th>Четвертый блок</th>
+	     											</tr>
+	     											<tr>
+	     												<td>1</td>
+	     												<td>2</td>
+	     												<td>3</td>
+	     												<td>4</td>
+	     											</tr>
+	     											<tr>
+	     												<td>1</td>
+	     												<td>2</td>
+	     												<td>3</td>
+	     												<td>4</td>
+	     											</tr>
+	     											<tr>
+	     												<td>1</td>
+	     												<td>2</td>
+	     												<td>3</td>
+	     												<td>4</td>
+	     											</tr>
+	     										</table>
+	     									</div>
+	     								</div>
+	     							</div>
+	     						</div>
+	     					</div>
+	     				</div>
+	     			</main>
+	     		</div>
+	     		<footer>
+	     			<div class="main-footer">
+	     				<div class="container">
+	     					<div class="row">
+	     						<div class="wrapper">
+	     							<div class="col-lg-4">
+	     								<div class="name-company">Commodity city</div>
+	     								<div class="footer-slogan">Интернет-магазин строительных товаров</div>
+	     								<address class="address">
+	     									<div class="footer-adress">333444, Ростов-на-Доу, ул. Безымянная, дом 5 </div>
+	     									<div class="footer-phone">8 (863) 123-45-67</div>
+	     									<div class="footer-email">info@comcity.ru</div>
+	     								</address>
+	     								<div class="social">
+	     									<span class="social__text">Мы в социальных сетях:</span>
+	     									<div class="ya-share2" data-services="facebook,odnoklassniki,vkontakte"></div>
+	     								</div>
+	     							</div>
+	     							<div class="col-lg-2">
+	     								<ul class="footer-menu">
+	     									<li class="footer-menu__item"><a href="#" class="footer-menu__lnk">О компании</a></li>
+	     									<li class="footer-menu__item"><a href="#" class="footer-menu__lnk">Способы оплаты</a></li>
+	     									<li class="footer-menu__item"><a href="#" class="footer-menu__lnk">Бонусная система</a></li>
+	     									<li class="footer-menu__item"><a href="#" class="footer-menu__lnk">Условия доставки</a></li>
+	     									<li class="footer-menu__item"><a href="#" class="footer-menu__lnk">Партнерам</a></li>
+	     									<li class="footer-menu__item"><a href="#" class="footer-menu__lnk">Контакты</a></li>
+	     								</ul>
+	     							</div>
+	     							<div class="col-lg-2">
+	     								<ul class="footer-menu">
+	     									<li class="footer-menu__item"><a href="#" class="footer-menu__lnk">Стройматериалы</a></li>
+	     									<li class="footer-menu__item"><a href="#" class="footer-menu__lnk">Столярные изделия</a></li>
+	     									<li class="footer-menu__item"><a href="#" class="footer-menu__lnk">Инструменты</a></li>
+	     									<li class="footer-menu__item"><a href="#" class="footer-menu__lnk">Напольные покрытия</a></li>
+	     									<li class="footer-menu__item"><a href="#" class="footer-menu__lnk">Плитка</a></li>
+	     									<li class="footer-menu__item"><a href="#" class="footer-menu__lnk">Сантехника</a></li>
+	     									<li class="footer-menu__item"><a href="#" class="footer-menu__lnk">Водоснабжение</a></li>
+	     									<li class="footer-menu__item"><a href="#" class="footer-menu__lnk">Электротовары</a></li>
+	     								</ul>
+	     							</div>
+	     							<div class="col-lg-4">
+	     								<div class="payment">
+	     									<div class="payment__title">Способы оплаты:</div>
+	     									<ul class="payment__list">
+	     										<li class="payment__item payment__item--visa"></li>
+	     										<li class="payment__item payment__item--master"></li>
+	     										<li class="payment__item payment__item--webm"></li>
+	     										<li class="payment__item payment__item--yandex"></li>
+	     										<li class="payment__item payment__item--qiwi"></li>
+	     										<li class="payment__item payment__item--paypal"></li>
+	     									</ul>
+	     								</div>
+	     								<div class="footer-subscribe">
+	     									<div class="footer-subscribe__text">Подпишитесь на рассылку и получите информацию о лучших предложениях</div>
+	     									<form action="/page" class="form-subscribe">
+	     										<input class="form-subscribe__input" type="text" placeholder="Ваш e-mail">
+	     										<button class="form-subscribe__btn" type="submit">Подписаться</button>
+	     									</form>
+	     								</div>
+	     							</div>
+	     						</div>
+	     					</div>
+	     				</div>
+	     			</div>
+	     			<div class="footer-map">
+	     				<a href="#" class="footer-map__show-btn"><span>Показать на карте</span></a>
+	     				<div class="yandex-map" id="yandex-map"></div>
+	     				<div class="footer-map__hide">
+	     					<a href="#" class="footer-map__hide-btn"><span>Скрыть карту</span></a>
+	     					<div class="copyright">© 2016  «Commodity city»</div>
+	     					<a class="webrost" href="http://www.webrost.ru">
+	     						<var>Разработка сайта</var>
+	     						<br>
+	     						<span>Студия «ВебРост»</span>      
+	     					</a>
+	     				</div>
+	     			</div>
+	     			<div class="footer-bonus">
+	     				<div class="footer-bonus__header">
+	     					<span class="footer-bonus__title">Бонусная лента</span><span class="footer-bonus__num-goods">35 товаров</span>
+	     					<span class="footer-bonus__count-bonus">У Вас <b>2308</b> баллов</span>
+	     					<a href="#" class="footer-bonus__get-ball">Как получить баллы?</a>
+	     					<a href="#" class="footer-bonus__show">Показать</a>
+	     					<a href="#" class="footer-bonus__more-sistem"><span>Подробнее о бонусной системе</span></a>
+	     				</div>
+	     				<div class="bonus-strip--footer">     				
+	     					<div class="container-fluid">
+	     						<div class="row">
+	     							<div class="col-lg-12">	 
+	     								<div class="wrapper"> 	
+	     									<div class="slider-bonus slider-bonus--footer">
+	     										<div>
+	     											<div class="slider-bonus__item">
+	     												<div class="slider-bonus__amount">Осталось: 20 шт</div>
+	     												<div class="slider-bonus__img">
+	     													<img src="i/bonus1.jpg" width="184" height="147" alt="Бонус">
+	     												</div>
+	     												<div class="slider-bonus__text">Пол наливной Unis горизонт универсальный</div>
+	     												<button class="slider-bonus__price">
+	     													<span class="slider-bonus__price-btn btn-orange"><span>105</span> баллов/шт </span>
+	     												</button>
+	     											</div>
+	     										</div>
+	     										<div>
+	     											<div class="slider-bonus__item">
+	     												<div class="slider-bonus__amount">Осталось: 5 уп</div>
+	     												<div class="slider-bonus__img">
+	     													<img src="i/bonus2.jpg" width="184" height="147" alt="Бонус">
+	     												</div>
+	     												<div class="slider-bonus__text">Ламинат Kronostar Superior 32кл./8мм. Ясень Стокгольмский</div>
+	     												<button class="slider-bonus__price">
+	     													<span class="slider-bonus__price-btn btn-orange"><span>235</span> баллов/шт </span>
+	     												</button>
+	     											</div>
+	     										</div>
+	     										<div>
+	     											<div class="slider-bonus__item">
+	     												<div class="slider-bonus__amount">Осталось: 5 уп</div>
+	     												<div class="slider-bonus__img">
+	     													<img src="i/bonus3.jpg" width="184" height="147" alt="Бонус">
+	     												</div>
+	     												<div class="slider-bonus__text">Теплоизоляция Izobox Экстралайт 1200 х 600 х 50</div>
+	     												<button class="slider-bonus__price">
+	     													<span class="slider-bonus__price-btn btn-orange"><span>1200</span> баллов/шт </span>
+	     												</button>
+	     											</div>
+	     										</div>
+	     										<div>
+	     											<div class="slider-bonus__item">
+	     												<div class="slider-bonus__amount">Осталось: 20 шт</div>
+	     												<div class="slider-bonus__img">
+	     													<img src="i/bonus1.jpg" width="184" height="147" alt="Бонус">
+	     												</div>
+	     												<div class="slider-bonus__text">Пол наливной Unis горизонт универсальный</div>
+	     												<button class="slider-bonus__price">
+	     													<span class="slider-bonus__price-btn btn-orange"><span>105</span> баллов/шт </span>
+	     												</button>
+	     											</div>
+	     										</div>
+	     										<div>
+	     											<div class="slider-bonus__item">
+	     												<div class="slider-bonus__amount">Осталось: 5 уп</div>
+	     												<div class="slider-bonus__img">
+	     													<img src="i/bonus2.jpg" width="184" height="147" alt="Бонус">
+	     												</div>
+	     												<div class="slider-bonus__text">Ламинат Kronostar Superior 32кл./8мм. Ясень Стокгольмский</div>
+	     												<button class="slider-bonus__price">
+	     													<span class="slider-bonus__price-btn btn-orange"><span>235</span> баллов/шт </span>
+	     												</button>
+	     											</div>
+	     										</div>
+	     										<div>
+	     											<div class="slider-bonus__item">
+	     												<div class="slider-bonus__amount">Осталось: 5 уп</div>
+	     												<div class="slider-bonus__img">
+	     													<img src="i/bonus3.jpg" width="184" height="147" alt="Бонус">
+	     												</div>
+	     												<div class="slider-bonus__text">Теплоизоляция Izobox Экстралайт 1200 х 600 х 50</div>
+	     												<button class="slider-bonus__price">
+	     													<span class="slider-bonus__price-btn btn-orange"><span>1200</span> баллов/шт </span>
+	     												</button>
+	     											</div>
+	     										</div>
+	     										<div>
+	     											<div class="slider-bonus__item">
+	     												<div class="slider-bonus__amount">Осталось: 20 шт</div>
+	     												<div class="slider-bonus__img">
+	     													<img src="i/bonus1.jpg" width="184" height="147" alt="Бонус">
+	     												</div>
+	     												<div class="slider-bonus__text">Пол наливной Unis горизонт универсальный</div>
+	     												<button class="slider-bonus__price">
+	     													<span class="slider-bonus__price-btn btn-orange"><span>105</span> баллов/шт </span>
+	     												</button>
+	     											</div>
+	     										</div>
+	     										<div>
+	     											<div class="slider-bonus__item">
+	     												<div class="slider-bonus__amount">Осталось: 5 уп</div>
+	     												<div class="slider-bonus__img">
+	     													<img src="i/bonus2.jpg" width="184" height="147" alt="Бонус">
+	     												</div>
+	     												<div class="slider-bonus__text">Ламинат Kronostar Superior 32кл./8мм. Ясень Стокгольмский</div>
+	     												<button class="slider-bonus__price">
+	     													<span class="slider-bonus__price-btn btn-orange"><span>235</span> баллов/шт </span>
+	     												</button>
+	     											</div>
+	     										</div>
+	     										<div>
+	     											<div class="slider-bonus__item">
+	     												<div class="slider-bonus__amount">Осталось: 5 уп</div>
+	     												<div class="slider-bonus__img">
+	     													<img src="i/bonus3.jpg" width="184" height="147" alt="Бонус">
+	     												</div>
+	     												<div class="slider-bonus__text">Теплоизоляция Izobox Экстралайт 1200 х 600 х 50</div>
+	     												<button class="slider-bonus__price">
+	     													<span class="slider-bonus__price-btn btn-orange"><span>1200</span> баллов/шт </span>
+	     												</button>
+	     											</div>
+	     										</div>
+	     										<div>
+	     											<div class="slider-bonus__item">
+	     												<div class="slider-bonus__amount">Осталось: 20 шт</div>
+	     												<div class="slider-bonus__img">
+	     													<img src="i/bonus1.jpg" width="184" height="147" alt="Бонус">
+	     												</div>
+	     												<div class="slider-bonus__text">Пол наливной Unis горизонт универсальный</div>
+	     												<button class="slider-bonus__price">
+	     													<span class="slider-bonus__price-btn btn-orange"><span>105</span> баллов/шт </span>
+	     												</button>
+	     											</div>
+	     										</div>
+	     									</div>
+	     								</div>
+	     							</div>
+	     						</div>
+	     					</div>
+	     				</div>
+	     			</div>
+	     		</footer>
+
+	     	</div>
+
+	     	<div id="login-site">
+	     		<div class="popup-title">Вход на сайт</div>
+	     		<input class="login-site__input" id="tab1" type="radio" name="tabs" checked>
+	     		<label class="login-site__label" for="tab1" title="Войти"><span>Войти</span></label> 
+	     		<input class="login-site__input" id="tab2" type="radio" name="tabs">
+	     		<label class="login-site__label" for="tab2" title="Зарегистрироваться"><span>Зарегистрироваться</span></label>
+	     		<form class="login-form" action="/page">
+	     			<label class="login-form__label">Логин:<input type="text" class="login-form__input"></label>
+	     			<label class="login-form__label">Пароль:<input type="password" class="login-form__input"></label>
+	     			<a href="#" class="login-form__fogot-pass">Забыли пароль?</a>
+	     			<button type="submit" class="login-form__btn btn-orange">Войти</button>
+	     			<label class="filter__check filter__check--remember"><input type="checkbox"><span></span>Запомнить меня</label>
+	     		</form>
+	     		<form class="singup-form" action="/page">
+	     			<label class="login-form__label">E-mail:<input type="text" class="login-form__input"></label>
+	     			<label class="login-form__label">Пароль:<input type="password" class="login-form__input"></label>
+	     			<label class="login-form__label">Подтвердите пароль:<input type="password" class="login-form__input"></label>
+	     			<button type="submit" class="login-form__btn btn-orange">Зарегистрироваться</button>
+	     			<label class="filter__check filter__check--remember"><input type="checkbox"><span></span>Запомнить меня</label>
+	     		</form>
+	     	</div>
+
+	     	<!-- Footer Scripts -->
+	     	<!-- Custom js scripts -->
+	     	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	     	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+	     	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	     	<script type="text/javascript" src="js/slick.min.js"></script>
+	     	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	     	<script type="text/javascript" src="js/script.js"></script>
+	     	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=WE0SR1L1BcCRNfnKshhHq_NWHGc9Vedu&width=100%&height=358&lang=ru_RU&sourceType=constructor&scroll=true&id=yandex-map"></script>
+				<script type="text/javascript" async src="//yastatic.net/share2/share.js" charset="utf-8"></script>
+	     </body>
+
+	     </html>
