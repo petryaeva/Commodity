@@ -1923,15 +1923,18 @@ ol.content-list {
     color: #f46316;
     font-size: 11px;
 }
-.baner-left__item {
-    max-width: 100%;
-    max-height: 100%;
-    margin-left: -8px;
+.baner-left {
+    width: 100%;
     margin: 0 auto;
 }
-.baner-left__item img {
-    width: 360px;
-    height: 240px;
+.baner-left__item {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.baner-left__item img {    
+    max-width: 100%;
+    height: 100%;
 }
 .baner-left__item--opacity {
     background: url(../i/figure-baner.png) no-repeat;
@@ -2709,6 +2712,11 @@ ol.content-list {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 .user-info__photo {
     margin-top: 8px;
@@ -3796,15 +3804,7 @@ a:focus {
 .table--account tr {
     position: relative;
 }
-.table--account tr:after {
-    content: "";
-    position: absolute;
-    background: #000;
-    display: block;
-    width: 1105px;
-    height: 2px;
-    left: 50px;
-}
+
 .goods-detail__slick-prev, 
 .goods-detail__slick-next {
     border: medium none;
